@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,13 +10,14 @@
     <h1>HTML DOM Events</h1>
     <p>Trigger a function on hover that will output "Hello World":</p>
 
-    <button onmouseover="myFunction()">Action!</button>
+    <button onmouseover="myFunction()" onfocus="myFunction()">Action!</button>
     <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+    </script>
 </body>
-<script>
-    function myFunction() {
-        document.getElementById("demo").innerHTML = "Hello World";
-    }
-</script>
 
 </html>
